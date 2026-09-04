@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" fill="none">
+  <defs>
+    <linearGradient id="electricGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#F59E0B" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Isotipo Escudo de Seguridad + Rayo -->
+  <g transform="translate(10, 8)">
+    <!-- Escudo exterior -->
+    <path d="M32 4 L56 14 C56 42 32 58 32 60 C32 58 8 42 8 14 Z" 
+          fill="url(#shieldGrad)" stroke="#F59E0B" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- Borde interior tenue -->
+    <path d="M32 9 L51 17 C51 40 32 53 32 54 C32 53 13 40 13 17 Z" 
+          fill="#0B132B" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1.2" />
+    <!-- Rayo de alta tensión -->
+    <path d="M35 15 L22 34 L31 34 L27 50 L43 29 L33 29 Z" 
+          fill="url(#electricGrad)" filter="url(#glow)" />
+    <!-- Punto de energía -->
+    <circle cx="32" cy="12" r="2" fill="#FACC15" />
+  </g>
+
+  <!-- Tipografía RDZ SOLUCIONES -->
+  <g transform="translate(82, 44)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="30" letter-spacing="1.5" fill="#FFFFFF">
+      RDZ<tspan fill="#F59E0B">.</tspan>
+    </text>
+    <text x="82" y="0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="28" letter-spacing="0.5" fill="#F1F5F9">
+      SOLUCIONES
+    </text>
+    <text x="2" y="20" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11.5" letter-spacing="2.8" fill="#38BDF8">
+      SERVICIOS ELÉCTRICOS CABA
+    </text>
+  </g>
+</svg>

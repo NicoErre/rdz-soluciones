@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070E1A" />
+      <stop offset="50%" stop-color="#0B192C" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="electricGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1" stroke-opacity="0.4" />
+    </pattern>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#F59E0B" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Accent glow spots -->
+  <circle cx="200" cy="150" r="180" fill="#38BDF8" fill-opacity="0.08" filter="blur(60px)" />
+  <circle cx="1000" cy="450" r="220" fill="#F59E0B" fill-opacity="0.12" filter="blur(80px)" />
+
+  <!-- Content Container -->
+  <g transform="translate(100, 110)">
+    <!-- Escudo Logo Grande -->
+    <g transform="translate(0, 0)">
+      <path d="M50 5 L90 22 C90 68 50 94 50 97 C50 94 10 68 10 22 Z" 
+            fill="#0F172A" stroke="#F59E0B" stroke-width="4" stroke-linejoin="round" />
+      <path d="M55 24 L34 54 L49 54 L42 80 L68 47 L52 47 Z" 
+            fill="url(#electricGrad)" filter="url(#glow)" />
+    </g>
+
+    <!-- Brand Header -->
+    <g transform="translate(120, 55)">
+      <text font-family="system-ui, sans-serif" font-weight="900" font-size="52" letter-spacing="2" fill="#FFFFFF">
+        RDZ<tspan fill="#F59E0B">.</tspan><tspan font-weight="700" fill="#F8FAFC">SOLUCIONES</tspan>
+      </text>
+      <text y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="18" letter-spacing="4" fill="#38BDF8">
+        SERVICIOS ELÉCTRICOS CABA
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text y="210" font-family="system-ui, sans-serif" font-weight="800" font-size="44" fill="#FFFFFF">
+      Soluciones Rápidas, Seguras y Garantizadas
+    </text>
+
+    <!-- Subtitle -->
+    <text y="265" font-family="system-ui, sans-serif" font-weight="500" font-size="24" fill="#94A3B8">
+      Urgencias 24 hs en CABA • Tableros • Cortocircuitos • Instalaciones
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 320)">
+      <!-- Badge 1 -->
+      <rect width="260" height="52" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <text x="25" y="32" font-family="system-ui, sans-serif" font-weight="600" font-size="17" fill="#F8FAFC">⚡ Urgencias 24 Horas</text>
+
+      <!-- Badge 2 -->
+      <rect x="280" width="310" height="52" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <text x="305" y="32" font-family="system-ui, sans-serif" font-weight="600" font-size="17" fill="#F8FAFC">📜 Normas AEA / Sellos IRAM</text>
+
+      <!-- Badge 3 -->
+      <rect x="610" width="280" height="52" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <text x="635" y="32" font-family="system-ui, sans-serif" font-weight="600" font-size="17" fill="#F8FAFC">💼 Realizamos Factura</text>
+    </g>
+
+    <!-- Contact bar bottom -->
+    <g transform="translate(0, 420)">
+      <rect width="900" height="60" rx="12" fill="#F59E0B" />
+      <text x="35" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#0F172A">
+        WhatsApp & Urgencias: 11 3803-1543  •  rdzsoluciones.com.ar
+      </text>
+    </g>
+  </g>
+</svg>
